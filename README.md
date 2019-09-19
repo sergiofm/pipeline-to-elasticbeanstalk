@@ -2,6 +2,9 @@
 
 Docker image and description how to use Bitbucket Pipelines to deploy to AWS ElasticBeanstalk applications.
 
+Based on `jobee/pipeline-to-elasticbeanstalk` and added NodeJS v10
+
+
 Basic usage
 -------
 
@@ -27,7 +30,7 @@ Basic usage
 ```yaml
 # filename: bitbucket-pipelines.yml
 
-image: jobee/pipeline-to-elasticbeanstalk
+image: sergiomenda/pipeline-to-elasticbeanstalk-with-nodejs
 
 pipelines:
   default:
