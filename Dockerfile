@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:12
 
 MAINTAINER Sergio Mendonça <sergio.mendonca@gmail.com>
 
@@ -29,8 +29,6 @@ RUN \
 
 RUN python -v
 RUN pip -v
-
-RUN npm install -g yarn --update
 
 # Install the Elastic Beanstalk Command Line Interface (EB CLI)
 RUN pip install --no-cache-dir awsebcli
